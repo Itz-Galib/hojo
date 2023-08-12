@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="employeemanagementsystem.SigninController">
+    <stylesheets>
+        <URL value="@signin.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="402.0" prefWidth="300.0" styleClass="left-form" stylesheets="@loginDesign.css">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="99.0" layoutY="153.0" size="8em" />
+            <Label layoutX="26.0" layoutY="177.0" text="Employee Management System" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="314.0" layoutY="37.0" text="New Admin" textFill="#368981">
+         <font>
+            <Font name="Tahoma Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="333.0" layoutY="83.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Username of new admin" styleClass="textfield" stylesheets="@loginDesign.css" />
+      <PasswordField fx:id="password" layoutX="333.0" layoutY="123.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Password of new admin" styleClass="textfield" stylesheets="@loginDesign.css" />
+      <TextField fx:id="username1" layoutX="333.0" layoutY="297.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
+      <PasswordField fx:id="password1" layoutX="333.0" layoutY="247.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+      <Label layoutX="314.0" layoutY="209.0" text="Current Admin" textFill="#368981">
+         <font>
+            <Font name="Tahoma Bold" size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password11" layoutX="333.0" layoutY="163.0" onAction="#loginAdmin" prefHeight="30.0" prefWidth="220.0" promptText="Confirm new password" styleClass="textfield" stylesheets="@loginDesign.css" />
+      <Button fx:id="loginBtn" layoutX="454.0" layoutY="353.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="26.0" prefWidth="98.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Sign Up" />
+   </children>
+</AnchorPane>
